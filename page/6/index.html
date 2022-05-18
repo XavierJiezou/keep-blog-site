@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="zh-CN,zh-TW,en,default"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="keywords" content="Python,AI,Machine Learning,Deep Learning"><meta name="description" content="Python 开发者，致力于人工智能 | 机器学习 | 深度学习 知识&amp;技术分享"><meta name="author" content="Xavier Jiezou"><title>ZXC&#39;s Blog</title><link rel="stylesheet" href="/css/style.css"><link rel="shortcut icon" href="/images/logo@800x800.jpg"><link rel="stylesheet" href="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css"><script id="hexo-configurations">let KEEP=window.KEEP||{};KEEP.hexo_config={hostname:"xavierjiezou.github.io",root:"/",language:["zh-CN","zh-TW","en","default"],path:"search.xml"},KEEP.theme_config={toc:{enable:!0,number:!0,expand_all:!0,init_open:!0},style:{primary_color:"#0066CC",avatar:"/images/avatar.jpg",favicon:"/images/logo@800x800.jpg",article_img_align:"left",left_side_width:"260px",content_max_width:"920px",hover:{shadow:!0,scale:!0},first_screen:{enable:!0,background_img:"/images/bg.svg",description:"Keep coding and Keep loving."},scroll:{progress_bar:{enable:!0},percent:{enable:!0}}},local_search:{enable:!0,preload:!0},code_copy:{enable:!0,style:"default"},pjax:{enable:!1},lazyload:{enable:!0},version:"3.4.5"},KEEP.language_ago={second:"%s seconds ago",minute:"%s minutes ago",hour:"%s hours ago",day:"%s days ago",week:"%s weeks ago",month:"%s months ago",year:"%s years ago"}</script><meta name="generator" content="Hexo 6.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="ZXC's Blog" type="application/atom+xml">
+</head><body><div class="progress-bar-container"><span class="scroll-progress-bar"></span></div><main class="page-container"><div class="page-main-content"><div class="page-main-content-top"><header class="header-wrapper"><div class="header-content"><div class="left"><a class="logo-image" href="/"><img src="/images/logo@800x800.jpg"> </a><a class="logo-title" href="/">ZXC&#39;s Blog</a></div><div class="right"><div class="pc"><ul class="menu-list"><li class="menu-item"><a class="active" href="/">首页</a></li><li class="menu-item"><a href="/archives">归档</a></li><li class="menu-item"><a href="/categories">分类</a></li><li class="menu-item"><a href="/tags">标签</a></li><li class="menu-item"><a href="/links">友链</a></li><li class="menu-item"><a href="/about">关于</a></li><li class="menu-item"><a href="/changelog">更新日志</a></li><li class="menu-item search search-popup-trigger"><i class="fas fa-search"></i></li></ul></div><div class="mobile"><div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div><div class="icon-item menu-bar"><div class="menu-bar-middle"></div></div></div></div></div><div class="header-drawer"><ul class="drawer-menu-list"><li class="drawer-menu-item flex-center"><a class="active" href="/">首页</a></li><li class="drawer-menu-item flex-center"><a href="/archives">归档</a></li><li class="drawer-menu-item flex-center"><a href="/categories">分类</a></li><li class="drawer-menu-item flex-center"><a href="/tags">标签</a></li><li class="drawer-menu-item flex-center"><a href="/links">友链</a></li><li class="drawer-menu-item flex-center"><a href="/about">关于</a></li><li class="drawer-menu-item flex-center"><a href="/changelog">更新日志</a></li></ul></div><div class="window-mask"></div></header></div><div class="page-main-content-middle"><div class="main-content"><div class="home-content-container fade-in-down-animation"><ul class="home-article-list"><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/10/Hexo-%E5%9C%A8%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E8%A7%86%E9%A2%91/">Hexo 在静态网站中插入音视频</a></h3><div class="home-article-content markdown-body">利用 hexo-tag-mmedia 在 Hexo 网站中插入音视频</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Jan 10 2022 00:59:01 GMT+0000">2022-01-10</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/hexo/">hexo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/hexo/">hexo</a>&nbsp;</li><li>| <a href="/tags/audio/">audio</a>&nbsp;</li><li>| <a href="/tags/video/">video</a>&nbsp;</li><li>| <a href="/tags/plug-in/">plug-in</a>&nbsp;</li></ul></span></div><a href="/2022/01/10/Hexo-%E5%9C%A8%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E4%B8%AD%E6%8F%92%E5%85%A5%E9%9F%B3%E8%A7%86%E9%A2%91/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/09/Network-%E8%A7%A3%E5%86%B3%E5%85%89%E7%8C%AB%E5%BC%95%E5%87%BA%E7%9A%84%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BD%91%E9%80%9F%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/">难道我买了一个假路由器？解决光猫引出的路由器网速很慢的问题</a></h3><div class="home-article-content markdown-body">更改路由器配置实现家庭网络高速上网</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Jan 09 2022 15:02:11 GMT+0000">2022-01-09</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/network/">network</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/network/">network</a>&nbsp;</li><li>| <a href="/tags/route/">route</a>&nbsp;</li><li>| <a href="/tags/wifi/">wifi</a>&nbsp;</li></ul></span></div><a href="/2022/01/09/Network-%E8%A7%A3%E5%86%B3%E5%85%89%E7%8C%AB%E5%BC%95%E5%87%BA%E7%9A%84%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BD%91%E9%80%9F%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/09/Blog-%E5%B0%86%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%83%A8%E7%BD%B2%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">静态网站部署到云服务器的最佳解决方案</a></h3><div class="home-article-content markdown-body">通过 GitHub Action 实现静态页面的自动化部署</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Jan 09 2022 02:41:03 GMT+0000">2022-01-09</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/blog/">blog</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/blog/">blog</a>&nbsp;</li><li>| <a href="/tags/github/">github</a>&nbsp;</li><li>| <a href="/tags/action/">action</a>&nbsp;</li><li>| <a href="/tags/deploy/">deploy</a>&nbsp;</li></ul></span></div><a href="/2022/01/09/Blog-%E5%B0%86%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%83%A8%E7%BD%B2%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/08/Demo-Hexo-%E5%9B%BE%E7%89%87CDN%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%B5%8B%E8%AF%95/">Demo Hexo 图片 CDN 访问加速测试</a></h3><div class="home-article-content markdown-body">任选一张样例图片对图床的 CDN 访问加速进行测试</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jan 08 2022 19:22:18 GMT+0000">2022-01-08</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/demo/">demo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/demo/">demo</a>&nbsp;</li><li>| <a href="/tags/hexo/">hexo</a>&nbsp;</li><li>| <a href="/tags/image/">image</a>&nbsp;</li><li>| <a href="/tags/cdn/">cdn</a>&nbsp;</li></ul></span></div><a href="/2022/01/08/Demo-Hexo-%E5%9B%BE%E7%89%87CDN%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%B5%8B%E8%AF%95/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/08/Demo-Hexo-%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E8%AE%BF%E9%97%AE%E6%B5%8B%E8%AF%95/">Demo Hexo 文章加密访问测试</a></h3><div class="home-article-content markdown-body">Here's something encrypted, password is required to continue reading.</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jan 08 2022 17:01:18 GMT+0000">2022-01-08</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/demo/">demo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/demo/">demo</a>&nbsp;</li><li>| <a href="/tags/hexo/">hexo</a>&nbsp;</li><li>| <a href="/tags/encrypt/">encrypt</a>&nbsp;</li></ul></span></div><a href="/2022/01/08/Demo-Hexo-%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E8%AE%BF%E9%97%AE%E6%B5%8B%E8%AF%95/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/08/Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E8%AE%BF%E9%97%AE/">Hexo 静态博客设置文章加密访问</a></h3><div class="home-article-content markdown-body">使用 hexo-blog-encrypt 为你的博文添加访问控制</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jan 08 2022 15:39:06 GMT+0000">2022-01-08</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/hexo/">hexo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/blog/">blog</a>&nbsp;</li><li>| <a href="/tags/hexo/">hexo</a>&nbsp;</li><li>| <a href="/tags/encrypt/">encrypt</a>&nbsp;</li><li>| <a href="/tags/plug-in/">plug-in</a>&nbsp;</li></ul></span></div><a href="/2022/01/08/Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E8%AE%BF%E9%97%AE/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/07/Blog-v1-0-0-Released/">Blog v1.0.0 Released</a></h3><div class="home-article-content markdown-body">使用 Hexo 框架 Keep 主题构建静态博客 菜单栏增加更新日志 网站源文件增加 CNAME</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Jan 07 2022 02:48:15 GMT+0000">2022-01-07</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/blog/">blog</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/blog/">blog</a>&nbsp;</li><li>| <a href="/tags/release/">release</a>&nbsp;</li></ul></span></div><a href="/2022/01/07/Blog-v1-0-0-Released/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/06/Demo-Hexo-%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">Demo Hexo 插入数学公式</a></h3><div class="home-article-content markdown-body">Hexo 公式渲染测试</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Thu Jan 06 2022 00:06:23 GMT+0000">2022-01-06</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/hexo/">hexo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/mathJax/">mathJax</a>&nbsp;</li></ul></span></div><a href="/2022/01/06/Demo-Hexo-%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li><li class="home-article-item"><h3 class="home-article-title"><a href="/2022/01/05/Hexo-hello-world/">Hexo Hello World</a></h3><div class="home-article-content markdown-body">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...</div><div class="home-article-meta-info-container"><div class="home-article-meta-info"><span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Jan 05 2022 20:15:30 GMT+0000">2022-01-05</span></span> <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;<ul><li><a href="/categories/hexo/">hexo</a>&nbsp;</li></ul></span><span class="home-article-tag"><i class="fas fa-tags"></i>&nbsp;<ul><li><a href="/tags/hexo/">hexo</a>&nbsp;</li></ul></span></div><a href="/2022/01/05/Hexo-hello-world/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a></div></li></ul><div class="home-paginator"><div class="paginator"><a class="prev btn" href="/page/5/">上一页</a></div></div></div></div></div><div class="page-main-content-bottom"><footer class="footer"><div class="info-container"><div class="copyright-info info-item">&copy; <span>2021</span> - 2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Xavier Jiezou</a></div><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="website-count info-item"><span id="busuanzi_container_site_uv">访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp; </span><span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span></div><div class="theme-info info-item">由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a></div><div class="icp-info info-item"><a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn">鄂ICP备2021017368号</a></div></div></footer></div></div><div class="right-bottom-side-tools"><div class="side-tools-container"><ul class="side-tools-list"><li class="tools-item tool-font-adjust-plus flex-center"><i class="fas fa-search-plus"></i></li><li class="tools-item tool-font-adjust-minus flex-center"><i class="fas fa-search-minus"></i></li><li class="tools-item tool-expand-width flex-center"><i class="fas fa-arrows-alt-h"></i></li><li class="tools-item tool-dark-light-toggle flex-center"><i class="fas fa-moon"></i></li><li class="tools-item rss flex-center"><a class="flex-center" href="/atom.xml" target="_blank"><i class="fas fa-rss"></i></a></li><li class="tools-item tool-scroll-to-bottom flex-center"><i class="fas fa-arrow-down"></i></li></ul><ul class="exposed-tools-list"><li class="tools-item tool-toggle-show flex-center"><i class="fas fa-cog fa-spin"></i></li><li class="tools-item tool-scroll-to-top flex-center"><i class="arrow-up fas fa-arrow-up"></i> <span class="percent"></span></li></ul></div></div><div class="image-viewer-container"><img src=""></div><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-input-field-pre"><i class="fas fa-keyboard"></i></span><div class="search-input-container"><input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="搜索..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fas fa-times"></i></span></div><div id="search-result"><div id="no-result"><i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i></div></div></div></div></main><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script><script src="//fastly.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script><div class="post-scripts"></div></body></html>
